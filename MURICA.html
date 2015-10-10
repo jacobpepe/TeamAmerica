@@ -5,10 +5,8 @@
 <body>
   <h1>Welcome to Meteor!</h1>
 
-  {{> hello}}
-</body>
+    <div class="map-container">
+    {{> googleMap name="exampleMap" options=exampleMapOptions}}
+  </div>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
+</body>
