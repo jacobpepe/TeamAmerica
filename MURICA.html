@@ -1,12 +1,22 @@
 <head>
   <title>MURICA</title>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
 </head>
 
 <body>
   <h1>Welcome to Meteor!</h1>
+  <div id="container">
 
-    <div class="map-container">
-    {{> googleMap name="exampleMap" options=exampleMapOptions}}
+    {{> insta}}
+
   </div>
 
+
 </body>
+
+<template name="insta">
+{{#each photoset}}
+  <img src="{{ images.low_resolution.url }}">
+
+{{/each}}
+</template>
